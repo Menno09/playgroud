@@ -1,0 +1,45 @@
+
+.Button {
+  position: relative;
+  display: inline-block;
+  font-weight: ;
+
+  &__ChildContainer {
+    &--Loading {
+      opacity: 0;
+    }
+  }
+
+  &__Loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  @each $name, $color in $theme-colors {
+    &--#{'' + $name} {
+      border: 1px solid map-get($color, 'default');
+      background-color: map-get($color, 'default');
+      color: color(white);
+
+      &:hover {
+        background-color: map-get($color, 'dark');
+        color: color(white);
+        text-decoration: none;
+      }
+
+      &:focus {
+        box-shadow: 0 0 0 0.2rem (map-get($color, 'default'), 0.3);
+      }
+    }
+  }
+
+  &--white {
+    color: $body-color;
+
+    &:hover {
+      color: $body-color;
+    }
+  }
+}

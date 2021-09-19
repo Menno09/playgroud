@@ -1,0 +1,88 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button component tests renders the Button in the black state 1`] = `
+<button
+  class="Button btn Button--black"
+  type="button"
+>
+  <div
+    class="Button__ChildContainer"
+  >
+    Klik hier!
+  </div>
+</button>
+`;
+
+exports[`Button component tests renders the Button in the green state 1`] = `
+<button
+  class="Button btn Button--green"
+  type="button"
+>
+  <div
+    class="Button__ChildContainer"
+  >
+    Klik hier!
+  </div>
+</button>
+`;
+
+exports[`Button component tests renders the Button in the light pink state 1`] = `
+<button
+  class="Button btn Button--pink"
+  type="button"
+>
+  <div
+    class="Button__ChildContainer"
+  >
+    Klik hier!
+  </div>
+</button>
+`;
+
+exports[`Button component tests renders the Button in the pink state 1`] = `
+<button
+  class="Button btn Button--pink"
+  type="button"
+>
+  <div
+    class="Button__ChildContainer"
+  >
+    Klik hier!
+  </div>
+</button>
+`;
+
+exports[`Button component tests renders the Button in the primary state 1`] = `
+<button
+  class="Button btn Button--primary"
+  type="button"
+>
+  <div
+    class="Button__ChildContainer"
+  >
+    Klik hier!
+  </div>
+</button>
+`;
+
+exports[`Button component tests renders the Button in the primary state with a link 1`] = `
+<a
+  class="Button btn Button--primary"
+  href="https://google.com"
+>
+  Klik hier!
+</a>
+`;
+
+exports[`Button component tests renders the Button in the secondary state 1`] = `
+<button
+  class="Button btn Button--secondary"
+  type="button"
+>
+  <div
+    class="Button__ChildContainer"
+  >
+    Klik hier!
+  </div>
+</button>
+`;
