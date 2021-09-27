@@ -7,7 +7,7 @@ import Props from './Button.props';
 const theme = {
   colors: {
     primary: "darkorange",
-    positive: "royalblue",
+    positive: "green",
     negative: "red"
   }
 };
@@ -29,3 +29,5 @@ export const Button = ({
     </ThemeProvider >
   )
 };
+
+export default Button

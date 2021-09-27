@@ -1,15 +1,16 @@
 import React, { useState } from 'react';
 import './App.css';
-import { Checkbox } from './Componeten/ui/CheckboxLabel/Checkbox';
+import Dropdown from './Componeten/ui/Dropdown/Dropdown';
+import Button from './Componeten/ui/Button/Button';
 
 const App = () => {
   return (
     <div className="App">
       < div className="App-header">
-        <h2>Random Number</h2>
         <div>
-          <Checkbox ne />
+          <Dropdown> <h2>Randomtext</h2></Dropdown>
         </div>
+        <Button>sadaas</Button>
       </div>
     </div>
   );
