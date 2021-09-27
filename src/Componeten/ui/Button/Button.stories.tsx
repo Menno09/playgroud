@@ -36,7 +36,7 @@ Green.args = {
 
 export const Pink = Template.bind({});
 Pink.args = {
-  children: 'Klik hier!',
+  children: 'hello',
   onClick: () => alert('Click!'),
   color: 'blue',
 };

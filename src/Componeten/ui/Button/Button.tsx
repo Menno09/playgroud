@@ -1,13 +1,20 @@
-import cn from 'classnames';
-import { useFormContext } from 'react-hook-form';
+import { ThemeProvider, useTheme } from '@emotion/react';
 
-// import styles from './Button.module.scss';
+import { ButtonMain } from './styles'
 import Props from './Button.props';
+
+
+const theme = {
+  colors: {
+    primary: "darkorange",
+    positive: "royalblue",
+    negative: "red"
+  }
+};
 
 export const Button = ({
   children,
   className,
-  color = "blue",
   href,
   onClick,
   type = 'button',
@@ -15,25 +22,10 @@ export const Button = ({
   disabled,
   ...props
 }: Props) => {
-  const formContext = useFormContext();
 
-  const isLoadingOrSubmitting =
-    (type === 'submit' && formContext?.formState.isSubmitting) || isLoading;
-
-  // const classNames = cn(styles.Button, className, 'btn', styles[`Button--${color}`]);
-
-  return href ? (
-    <a href={href}{...props}>
-      {children}
-    </a >
-  ) : (
-    <button disabled={disabled} type={type} onClick={onClick} {...props}>
-      <div>
-        {children}
-      </div>
-      {isLoadingOrSubmitting && (
-        <p>loading......</p>
-      )}
-    </button>
-  );
+  return (
+    <ThemeProvider theme={theme}>
+      <ButtonMain onClick={onClick}>{children}</ButtonMain>
+    </ThemeProvider >
+  )
 };
